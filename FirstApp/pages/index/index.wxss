@@ -27,6 +27,8 @@
 }
 
 .scrollviewBgViewBtnView{
+  flex: 1;
+  flex-direction: column;
   height: 33px;
   width: 100%;
   align-items: center;

@@ -4,7 +4,7 @@ var app = getApp()
 Page({
   data: {
     componetsArr : [
-      {name:"View",id:"1"},
+      {name:"View",id:"1",url:"/component/button/buttonDemo"},
       {name:"ScrollView","id":"2"},
       {name:"Swiper","id":"3"},
       {name:"Icon","id":"4"},
@@ -34,6 +34,14 @@ Page({
       url: '../logs/logs'
     })
   },
+//点击列表的处理函数
+bindListAction: function(event){
+  console.log(event.target.dataset.alphaBeta);
+  console.log(this.data.componetsArr[event.target.dataset.alphaBeta]);
+  wx.navigateTo({
+    url:this.data.componetsArr[event.target.dataset.alphaBeta].url
+  })
+},
   onLoad: function () {
     console.log('onLoad')
     var that = this
