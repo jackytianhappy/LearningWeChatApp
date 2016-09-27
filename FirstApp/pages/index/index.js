@@ -36,8 +36,6 @@ Page({
   },
 //点击列表的处理函数
 bindListAction: function(event){
-  console.log(event.target.dataset.alphaBeta);
-  console.log(this.data.componetsArr[event.target.dataset.alphaBeta]);
   wx.navigateTo({
     url:this.data.componetsArr[event.target.dataset.alphaBeta].url
   })

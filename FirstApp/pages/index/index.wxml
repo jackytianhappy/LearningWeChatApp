@@ -6,7 +6,7 @@
   </view>
   <scroll-view scroll-y="true" class = "scrollViewBgView">
       <view class = "scrollviewBgViewBtnView" wx:for="{{componetsArr}}" wx:for-index="idx" wx:for-item="itemName" >
-        <text class="listText"  bindtap="bindListAction" data-alpha-beta="{{idx}}">{{idx}}:{{itemName.name}}的demo页面</text>
+        <Text class="listText"  bindtap="bindListAction" data-alpha-beta="{{idx}}">{{idx}}:{{itemName.name}}的demo页面</Text>
       </view>
   </scroll-view>
 </view>
